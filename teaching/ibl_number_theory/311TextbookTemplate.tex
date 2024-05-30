@@ -1,0 +1,292 @@
+% Latex Template For Team Textbook
+
+% !!!!!!!!!!!!   INSTRUCTIONS  !!!!!!!!!!!!!!
+
+% 1) please use  Chapter_Number(Team).tex for your texfile, e.g. if you are on Team A have Chapter 1 use Chapter_1A.tex.
+
+% 2) if you label a theorem or equation, use your chapter and team to identify the label such as 
+% \label{aA_T1} for your first theorem if you are on Chapter 1 of Team A.
+
+% 3) Do not use \def or \newcommand unless really necessary. If you can't help yourself,
+% then do a find/replace throughout your section with the original non-macro version of 
+% the command. 
+
+% 4) There is a sample Chapter below. For individual chapter submissions just 
+% cut and paste that template into you space below your chapter.  
+
+% 5) Submit your work in both tex and pdf format, but make sure it compiles first. 
+
+
+
+\documentclass[12pt]{article}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{esint}
+\usepackage{mathrsfs}
+\usepackage{comment}
+\usepackage{bbm,dsfont}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}{Example}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{proposition}[theorem]{Proposition}
+
+
+\usepackage{graphicx}
+
+\def\N {{\mathbb N}}
+\def\Z {{\mathbb Z}}
+\def\Q {{\mathbb Q}}
+\def\R {{\mathbb R}}
+\def\C {{\mathbb C}}
+
+
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\SO}{SO}
+\DeclareMathOperator{\Orthog}{O}
+\DeclareMathOperator{\Sp}{Sp}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\real}{Re}
+\DeclareMathOperator{\imag}{Im}
+
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%~~~~~~~~~~~~~~~~ Header and Table of Contents ~~~~~~~~
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+% For your individual chapter submissions you can ignore the header and table of contents. 
+% This part will only become important when you compile all of the chapters.  
+% Then you can uncomment this part and fill in the relevant details.  
+
+% \title{Our Number Theory Textbook} % I encourage you to come up with a better title.  
+
+% \author{P. Fermat\\  %Replace with your team member names, in alphabetical order.
+% C. Gauss\\
+% A. Haensch\\
+% D. Hilbert\\
+% J. Lagrange\\
+% J. Liouville\\} 
+
+% \date{December, 2015}
+
+\begin{document}
+
+% \maketitle
+
+%\newpage
+%\tableofcontents
+
+%\newpage
+
+% From here you should just be able to cut and paste your individual chapter contents into the appropriate space.  
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%~~~~~~~~~~~~~~~~ Chapter 1 ~~~~~~~~~~~~~~~~~~~~~~~
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\section{Divisiblity} % Replace this with your chapter number and title. 
+
+\setcounter{equation}{0}
+\setcounter{theorem}{0}
+
+\addcontentsline{toc}{subsection}{{\it A. Haensch}} % Replace this with your name and chapter title. 
+\begin{center}
+{\it A. Haensch} % replace this with your name
+\end{center}
+
+\subsection{Introduction}
+
+Here you will give a one-page introduction to your chapter highlighting key concepts, results, and techniques that will appear in the chapter.  This should be a way to tie the terms, theorems, and examples together. 
+
+\subsection{Glossary of Terms}
+
+In this section you will define your terms using the definitions we crafted throughout the course.
+
+\begin{itemize}
+\item An {\em axiom} is a statement or proposition that is regarded as being established, accepted, or self-evidently true.
+
+\item A {\em theorem} is a general proposition not self-evident but proved by a chain of reasoning; a truth established by means of accepted truths.
+\end{itemize}
+
+\subsection{Theorems}
+
+In this section you will state theorems from the course and give proofs.  Generally, these will looks something like the following. 
+
+\begin{theorem}
+The sum of two odd numbers is always even. 
+\end{theorem}
+
+\begin{proof}
+Suppose that $a$ and $b$ are two arbitrary odd numbers, so by definition $x=2k+1$ and $y=2m+1$ for some $k,m\in \Z$.  Then,
+\begin{eqnarray*}
+a+b&=&(2k+1)+(2m+1)\\
+&=& 2(k+m)+1+1\\
+&=&2(k+m)+2\\
+&=&2(k+m+1).
+\end{eqnarray*}
+But $k+m+1\in\Z$, and therefore $a+b$ is two times an integer and hence is even, by the definition of even. 
+\end{proof}
+
+\subsection{Examples}
+
+Here you will give {\em at least} three nice examples, enumerated as below.  
+
+\begin{example} This is your first example.  Here you might talk about $m\in \Z$ and  $n\in \N$ with
+\[
+m\equiv n\mod p,
+\]
+for some prime $p$. 
+\end{example}
+
+\begin{example}  This is your second example.  Here you might talk about a set of numbers, 
+\[
+\{0,1,2,...,p-1\}.
+\]
+
+\end{example}
+
+\begin{example}  This is your third example.  Here you might do the Euclidean algorithm, to establish that 
+\[
+\gcd(a,b)=1.
+\]
+
+\end{example}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%~~~~~~~~~~~~~~~~ Chapter 2 ~~~~~~~~~~~~~~~~~~~~~~~
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\section{Primes} % Replace this with your chapter number and title. 
+
+\setcounter{equation}{0}
+\setcounter{theorem}{0}
+
+\addcontentsline{toc}{subsection}{{\it C. Gauss}} % Replace this with your name and chapter title. 
+\begin{center}
+{\it C.F. Gauss} % replace this with your name
+\end{center}
+
+\subsection{Introduction}
+
+\subsection{Glossary of Terms}
+
+\subsection{Theorems}
+
+\subsection{Examples}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%~~~~~~~~~~~~~~~~ Chapter 3 ~~~~~~~~~~~~~~~~~~~~~~~
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\section{Modularity} % Replace this with your chapter number and title. 
+
+\setcounter{equation}{0}
+\setcounter{theorem}{0}
+
+\addcontentsline{toc}{subsection}{{\it J. Liouville}} % Replace this with your name and chapter title. 
+
+\begin{center}
+
+{\it J. Liouville} % replace this with your name
+
+\end{center}
+
+\subsection{Introduction}
+
+\subsection{Glossary of Terms}
+
+\subsection{Theorems}
+
+\subsection{Examples}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%~~~~~~~~~~~~~~~~ Chapter 4 ~~~~~~~~~~~~~~~~~~~~~~~
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\section{Fermat's Little Theorem} % Replace this with your chapter number and title. 
+
+\setcounter{equation}{0}
+\setcounter{theorem}{0}
+
+\addcontentsline{toc}{subsection}{{\it P. Fermat}} % Replace this with your name and chapter title. 
+\begin{center}
+{\it P. Fermat} % replace this with your name
+\end{center}
+
+\subsection{Introduction}
+
+\subsection{Glossary of Terms}
+
+\subsection{Theorems}
+
+\subsection{Examples}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%~~~~~~~~~~~~~~~~ Chapter 5 ~~~~~~~~~~~~~~~~~~~~~~~
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\section{Polynomial Congruences} % Replace this with your chapter number and title. 
+
+\setcounter{equation}{0}
+\setcounter{theorem}{0}
+
+\addcontentsline{toc}{subsection}{{\it J. Lagrange}} % Replace this with your name and chapter title. 
+\begin{center}
+{\it J. Lagrange} % replace this with your name
+\end{center}
+
+\subsection{Introduction}
+
+\subsection{Glossary of Terms}
+
+\subsection{Theorems}
+
+\subsection{Examples}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%~~~~~~~~~~~~~~~~ Chapter 6 ~~~~~~~~~~~~~~~~~~~~~~~
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\section{Quadratic Reciprocity} % Replace this with your chapter number and title. 
+
+\setcounter{equation}{0}
+\setcounter{theorem}{0}
+
+\addcontentsline{toc}{subsection}{{\it D. Hilbert}} % Replace this with your name and chapter title. 
+\begin{center}
+{\it D. Hilbert} % replace this with your name
+\end{center}
+
+\subsection{Introduction}
+
+\subsection{Glossary of Terms}
+
+\subsection{Theorems}
+
+\subsection{Examples}
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

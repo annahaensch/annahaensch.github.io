@@ -1,0 +1,38 @@
+\documentclass[11pt]{article}
+\usepackage[usenames]{color}
+\usepackage{amsmath, amssymb, latexsym, multicol, amsthm, color, enumerate,comment}
+\usepackage[all]{xy}
+\setlength{\textheight}{9in} \setlength{\textwidth}{6.5in}
+%Here you define your Theorem and Conjecture Environments.  The format is the following
+% \newtheorem{label}{Name of theorem as it appears in PDF}
+\newtheorem*{C-A1}{Conjecture A1}
+\newtheorem*{T-A1}{Theorem A1}
+\newtheorem*{P-A1}{Problem A1}
+\voffset -.7 in \hoffset -0.75 in
+\parindent 10pt
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{document}
+\hfill{Put Your Name Here}\\
+
+\begin{C-A1}
+% Here you will state the first Conjecture
+\end{C-A1}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+% If the conjecture is false, you need to explain why by giving a counterexample.  Do that in this space.  Then you make the necessary modifications to make the conjecture true, state it as a theorem below, and prove it. 
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{T-A1}
+% Here you will state either the theorem given to you (if it is true), or the modified version of your conjecture above.
+\end{T-A1}
+
+\begin{proof}
+% Here you give a proof of the theorem.  This should be in full sentences with paragraphs following the standard conventions of the written english language. 
+\end{proof}
+
+
+\end{document}

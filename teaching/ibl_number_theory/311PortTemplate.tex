@@ -1,0 +1,100 @@
+\documentclass[11pt]{article}
+\setlength{\textheight}{9in} \setlength{\textwidth}{6.5in}
+\usepackage[margin=0.7in]{geometry}
+\pagenumbering{gobble}
+\usepackage{url}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{esint}
+\usepackage{mathrsfs}
+\usepackage{comment}
+\usepackage{bbm,dsfont}
+
+
+\newtheorem*{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem*{conjecture}{Conjecture}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{remark}{Remark}
+\newtheorem{proposition}{Proposition}
+
+
+\usepackage{graphicx}
+
+\def\N {{\mathbb N}}
+\def\Z {{\mathbb Z}}
+\def\Q {{\mathbb Q}}
+\def\R {{\mathbb R}}
+\def\C {{\mathbb C}}
+
+
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\SO}{SO}
+\DeclareMathOperator{\Orthog}{O}
+\DeclareMathOperator{\Sp}{Sp}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\real}{Re}
+\DeclareMathOperator{\imag}{Im}
+
+\begin{document}
+{ \noindent Math 311 
+} \hfill A. Haensch %Replace with your name
+
+\vskip 2mm
+
+\begin{center}
+\line(1,0){500}
+\end{center}
+
+\begin{center}
+{\bf \Large \sc Portfolio $\# n$ %Replace with $n$ as appropriate
+}
+\end{center}
+
+
+\section*{Summary}  
+
+In this section you will give a summary of what problem set $\#n$ meant to you in context of the course.  Try to tie together the ideas from previous problem sets, and feel free to use any terminology that we've defined in the course (either in previous problem sets or on this one).  The purpose of this summary is to help you understand our weekly work in the context of the larger number theory story. Shoot for half a page, $\sim 200$ words. 
+
+\section*{Terminology} %In this section you will give formal definitions for the terminology on problem set #n based on what we established in class.  Remember, these should be the definitions *WE* came up with, not copied from the internet or another textbook.  Eventually these will be the definitions we use in our book. 
+\begin{itemize}
+\item An {\em even number} is an integer that can be written in the form $2k$, where $k\in \mathbb Z$.
+\item An {\em odd number} is an integer that can be written in the form $2k+1$, where $k\in \mathbb Z$.
+\end{itemize}
+
+\section*{Proofs}
+
+\begin{theorem}[\textbf{1.1}]  %You should change these numbers in brackets to match the problem set. 
+%If a conjecture is true as stated on the problem set, you state it here as a theorem. 
+The product of two odd numbers is always odd.  
+\end{theorem}
+
+\begin{proof}
+%Then you prove the theorem here. 
+Suppose that $2k+1$ and $2m+1$ are two arbitrary odd numbers, with $k,m\in \mathbb Z$.  Their product is given by 
+\[
+(2k+1)\cdot (2m+1)=4km+2m+2k+1=2(2km+m+k)+1,
+\] 
+which is an odd number, since $2km+m+k\in \mathbb Z$. 
+\end{proof}
+
+\begin{theorem}[\textbf{1.2}]
+%Sometimes you will be stating the ``salvaged" version of a conjecture, say conjecture 1.2, which is now called theorem 1.2.  For example, if the problem set had "The sum of two odd numbers is always odd," you might salvage that as follows:
+The sum of two odd numbers is always even. 
+\end{theorem}
+
+\begin{proof}
+% And finally, you prove your salvaged theorem. 
+Suppose that $2k+1$ and $2m+1$ are two arbitrary odd numbers, with $k,m\in \mathbb Z$.  Then,
+\begin{eqnarray*}
+2k+1+2m+1=& 2k+2m+2\\
+=&2(k+m+1).
+\end{eqnarray*}
+But $k+m+1\in\mathbb Z$, and therefore $2k+1+2m+1$ is two times an integer and hence is even. 
+\end{proof}
+
+\end{document}
+
