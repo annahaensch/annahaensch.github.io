@@ -27,7 +27,8 @@ header{
 */
 
 img{display: block;
-    border-radius: 0px}
+    border-radius: 0px;
+    max-width: 400px}
 
 img.header{display: block;
     border-radius: 0px;
